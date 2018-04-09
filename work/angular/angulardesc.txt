@@ -1,0 +1,102 @@
+Angular allows us to write  simple and single page applications. MVC style single page applications.
+
+Angular is open source, comprehensive. It extends html vocabulary by providingits won elememts and properties which are basically the directives.
+
+
+Angular architecture:
+Two way binding-means that user input in the form fields is instantly updated in your angular model.
+Dirty checking- you dont need getter and setter methods to get and set data , rather your data  is stored as simple javascript objects and angular will respond whenever your data changes.
+Angular is build on dependency injection. this lets you encapsulate your pieces of data better and improves your testability.
+
+Controllers contain both logic and state.
+
+services communicate with the server.  
+
+Controller's main task is to create scope variable which can communicate with view.
+scope is used to expose the model to the view.  Scope is not the modal.
+
+you can also bind the functions on the scope.
+
+Directives are new html functionality.
+
+ng-app
+ng-bind
+ng-bind-template-you can bind couple of things together
+ng-bind-html- we need to include angular-sanitize for this directive to work.
+ng-bind-html-unsafe
+
+ng-show, ng-hide
+
+ng-style-used for styling
+
+ng-class
+ng-class-even
+ng-class-odd
+
+
+ng-disabled- we need this directive because of ambiguities inn HMTL spec. For example setting disbaled = false, doesnt disable in many browsers.
+ng-checked
+ng-multiple
+ng-readonly
+ng-selected
+
+ng-form-when you want to nest the forms.
+ng-submit
+ng-href-for binding the href.
+ng-src-for binding the source of the image. It delays fetching an image until after binding has occcured.
+ng-non-bindable
+
+Filters:
+filters can modify output
+filters are used in formatting.
+they are used in sorting dataset
+they are used in filtering dataset.
+
+uppercase
+lowercase
+date
+number
+currency
+json
+orderBy
+limitTo-lets you limit the records to a certain number.
+filter
+
+ng-model works with three html elements: input,select,textarea.
+
+Validations.
+Required
+ngPattern
+Form Properties
+CSS Classes
+
+
+Service- is an object which is used to encapsulate some sort of buisness logic.
+not necessarily over the wire(ajax calls).
+services are stateless. that means they dont cache the data which is frequently used. 
+ 
+ Why we use service ?
+ Code can be reused. Allows you to break your code into pieces of elements that are easier to maintain.  It violates single responsibility principle(SRP) which says object should only have single responsibility.
+ Dependency injection.
+ Using serives make easier to test the code, So they improve testability.
+
+ aAngular service is different than any other service because it is registered with Angular so that Angular can inject it.
+
+$http   $resource  $anchorScroll  $cacheFactory  $compile  $parse  $locale $timeout  $exceptionHandler  $filter  $cookieStore 
+
+$interpolate $log   $rootScope  $window  $document  $rootElement       $route $routeParams $location $httpBackend $controller
+
+$resource assumes that your server is using rest based architecture.
+$resource( , ).get() the first parameter is the url where the file is located. Second parameter is an object that specifies default values that are used in that route. in this example is parameter is going to be replaced with the isd of the object being saved or retrieved. retrive object where id=1.
+
+
+$cache factory- https://docs.angularjs.org/api/ng/service/$cacheFactory
+
+$compile service- is used heavily internally by angular. and it is used whenever a page is loaded. angular uses the compile service to look through the directives on the page.
+
+$parse service is quite similar to the compile serivce. Parse is used to evaluate an expression and turn that expression into a function that can be evaluated in the given context.
+
+$locale service is very starightforward service. that is used for localization of date and time formats.
+
+$exceptionHandler when you want to override the default behaviour and angular exceptions yourself. 
+ when angular loads a template , angular stores the template in its template cache , so when a same page is requested again , there is no new request that is  being made to the server but angular loads the page from angular cache.

@@ -1,0 +1,4 @@
+uses for directives
+1-Custom Elements
+2-Custom Events
+3-Observe and react to changes

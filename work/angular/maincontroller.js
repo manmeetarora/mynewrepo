@@ -1,0 +1,9 @@
+angular.module("myapp").controller("MainController",
+	function($scope){
+   $scope.value="Manmeet"; 
+   $scope.lastname="Arora";
+   $scope.sayhi=function()
+   {
+   alert($scope.value);
+   }
+});	 

@@ -1,0 +1,1 @@
+console.log("hello first application in node");

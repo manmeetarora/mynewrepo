@@ -1,0 +1,6 @@
+var two="hello0"
+var two0="hello1"
+var two1="hello2"
+var two2="hello3"
+var two3="hello4"
+var two4="hello5"

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example of cache factory</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-cookies.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-touch.min.js"></script>
+	<script type="text/javascript" src="cache.js"></script>
+
+</head>
+<body ng-app="myapp" ng-controller="maincontrol">
+Key : <input type="text" ng-model="key"><br/>
+Value : <input type="text" ng-model="value"><br/>
+<button ng-click="addtocache(key,value)">Add to cache </button><br/>
+
+<input type="text" ng-model="keytoread">
+<h3>Value from cache : {{raedfromcache(keytoread)}}</h3>
+<h3>stats from cache : {{getcachestats()}}</h3>
+
+<div id="appendhere"></div>	
+Name: <input type="text" ng-model="name"><br/>
+Markup:<input type="text" ng-model="markup"><br/>
+<button ng-click="appelementtodiv(markup)">Add</button><br/>
+
+<h3>{{mydate | date:myformat }}</h3>
+
+</body>
+</html>

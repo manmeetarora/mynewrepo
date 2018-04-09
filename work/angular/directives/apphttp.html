@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Making api call (Git Hub)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="apphttp.js"></script>
+</head>
+<body ng-app="myapp" ng-controller="mycontroller">
+<input type="text" placeholder="enter username to find" ng-model="username">
+<input type="submit" ng-click="search(username)">
+{{username}}
+  <h3> Name: {{data.name}} </h3>
+   <h3> Location: {{data.location}} </h3>
+   <h3>Type: {{data.type}}</h3>
+   <h3>login: {{data.login}}</h3>
+   <h3>Id: {{data.id}}</h3>
+
+</body>
+</html>

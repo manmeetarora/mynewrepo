@@ -1,0 +1,1 @@
+var one="hello0",one1="hello1",one2="hello2",one3="hellO3",one4="hello4",one5="hello5";

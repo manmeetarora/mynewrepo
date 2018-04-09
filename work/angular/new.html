@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>	
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<div ng-app="myapp">
+<div ng-controller="MainController">
+	<input type="text" ng-model="value">
+	{{value}} {{lastname}}
+
+	<button ng-click="sayhi()">greet</button>
+</div>
+
+<div ng-controller="controller2">
+	<div>
+		<p ng-show="false">I will be hidden on load</p>
+		<p ng-hide="true">hello there</p>
+		<p ng-if="false	">hey there</p>
+	</div>
+	<div ng-controller="controller2">
+   <form ng-if="showname">
+   <input type="text" placeholder="firstname">
+   <input type="text" placeholder="lastname">
+   </form>
+   <button ng-click="showit()">show</button>
+   <button ng-click="hideit()">hide</button>
+   </div>
+   <ul>
+   <li ng-repeat="x in names">
+   {{x.country}}
+   </li>
+   </ul>
+</div>
+</div>
+</body>
+</html>

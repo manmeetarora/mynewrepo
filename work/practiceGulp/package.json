@@ -1,0 +1,20 @@
+{
+  "name": "practicday1",
+  "version": "1.0.0",
+  "description": "protek gulp practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "manmeet",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "0.0.15",
+    "gulp-uglify": "^2.1.2"
+  }
+}

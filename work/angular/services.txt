@@ -1,0 +1,27 @@
+service in angular is a component that performs a specific job. can be code that provide validations check. http is a kind of service in angular.or it can be a code that talks with local storage in the browser.or manage cookies that are sent from the server.
+
+In javascript there are methods setTimeOut and setInterval, you can also use these methods but angular has services $interval and $timeout. these services wrap the two functions which are setTimeOut and setinterval.
+
+If you want to unit test the code, it is much easier to unit test if you are using angular services instead of javascript built in functions.
+now by using the functions , two way data binding is not achieved perfectly. If we are using setTimeOut to update the data in modal and view, the data is not updated correctly. So we use angular services such as $timeout and $interval instead of built in javascript functions.
+
+Role of Services:
+lets talk about the relationship between services and rest of your application.
+services hide the details of http communication, thus providing encapsulation in controller.
+you can also use service inside a directive.
+There are many services like $interval, $timeout, $window, $location, $browser, $animate, $log.
+
+
+$log service methods- log , warn , info , debug, error.
+you can also reprogram these built in log services.
+
+UI related services. 
+Forexample forcefully navigating to a newurl. forcefully opening a model or prompting user for a input. It is advisable not to touch UI related objects directly from the model instead use angular services that wrap these kind of functionality. Service represents simplified  API for that UI component making it easier to use.
+$location, $anchorScroll
+
+
+Why build our own service?
+use single service from multiple controllers. that means there will be only one instance of service that is used by all the controllers.
+1- create resuable logic
+2- create shared data
+3-Manage complexity  

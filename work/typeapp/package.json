@@ -1,0 +1,17 @@
+{
+  "name": "manmeet",
+  "version": "1.0.0",
+  "description": "my new appliaction",
+  "main": "car.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^7.0.29"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

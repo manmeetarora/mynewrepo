@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="panelapp">
+<head>
+	<title>Panel</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script type="text/javascript" src="panel.js"></script>
+	<link rel="stylesheet" type="text/css" href="validity.css">
+</head>
+<body ng-controller="panelcontroller">
+<h2>Reviews</h2>
+<ul>
+	<li ng-repeat="views in products.reviews">
+	{{views.stars}}<br/>
+	{{views.name}}<br/>
+	{{views.author}}<br/>
+	</li>
+</ul>
+
+<form name="reviewform" novalidate >
+{{review.stars}}<br/>
+{{review.name}}<br/>
+{{review.author}}<br/>
+<select ng-model="review.stars" required>
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+<input type="text" ng-model="review.name" required />
+<input type="email" ng-model="review.author" required />
+<div>review form is {{reviewform.$valid}}</div>
+<input type="submit" value="Add Review" ng-click="reviewform.$valid&&addReview()">
+</form>	
+</body>
+</html>

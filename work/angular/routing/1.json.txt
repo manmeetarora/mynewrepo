@@ -1,0 +1,44 @@
+{
+     	        name:"learning angular",
+     	        date:"5/14/2017",
+     	        time:"8:34 pm",
+     	        location:{
+     	        	city:"Chicago",
+     	        	state:"IL",
+     	        	zip:"60616",
+     	        	upvotecount:0
+     	        },
+     	        sessions:[
+     	        {
+                    id:1,
+     	        	name:"Session1",
+     	        	duration:"1 hr",
+     	        	level:"Level 1",
+     	        	upvotecount:0
+     	        },
+
+                {
+                    id:2,
+                	name:"Session2",
+                	duration:"4 hr",
+                	level:"Level 2",
+                	upvotecount:0
+                },
+                  {
+                    id:3,
+                	name:"Session3",
+                	duration:"4 hr",
+                	level:"Level 2",
+                	upvotecount:0
+                },
+                {
+                    id:4,
+                	name:"Session 4",
+                	duration:"2hr",
+                	level:"Level 3",
+                	upvotecount:0
+                }
+
+
+     	        ]
+     	    }

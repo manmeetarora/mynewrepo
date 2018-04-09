@@ -1,0 +1,12 @@
+ng-model is used to transfer data from view to the model.
+
+ng-click on button and ng-submit on form.
+
+ng-repeat is used when you want to loop through certain things.
+
+you can also use filters. one example of filter is using a number filter. for eg if you use a number filter. 4567 will occur as 4,567.
+or if you use number:1 , then that means also show one decimal place , so it will be 4,567.0.
+
+we can use orderBy:'field' . if we use +field then that means ascending order and if we use -field , then that means descending order.
+
+ng-include can bring html from another source.like from another file nand you can use that html in current view.this is useful because you can break complex page into pieces and it is useful if you have markup that can be used in other views.

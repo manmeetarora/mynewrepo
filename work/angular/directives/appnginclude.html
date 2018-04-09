@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example of ng include</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="appnginclude.js"></script>
+</head>
+<body ng-app="myapp" ng-controller="mycontrol">
+<input type="text" placeholder="enter username to find" ng-model="username">
+<input type="submit" ng-click="search(username)">
+
+<div ng-include="'userdetails.html'" ng-show="data">
+	
+</div>
+</body>
+</html>

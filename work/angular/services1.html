@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Services demo using $interval</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="services1.js"></script>
+</head>
+<body ng-app="myapp" ng-controller="mycontroller">
+{{countdown}}
+<input type="text" placeholder="Enter username to search" ng-model="username">
+<input type="submit" ng-click="search(username)">
+<table>
+<tr id="userdetails">
+	<th>
+		Name
+	</th>
+	<th>
+		Stars
+	</th>
+	<th>
+		Language
+	</th>
+</tr>
+<tr ng-repeat="repo in repos">
+	<td>
+		{{repo.name}}
+	</td>
+		<td>
+		{{repo.stargazers_count}}
+	</td>
+		<td>
+		{{repo.language}}
+	</td>
+</tr>
+</table>
+</body>
+</html>

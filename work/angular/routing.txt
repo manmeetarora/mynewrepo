@@ -1,0 +1,15 @@
+Suppose you are building a web application and you dont want to put all your code in a single controller and a single view.So your application will have multiple views and multiple controllers that binds your data.
+
+Routing based on URL.
+routing engine captures the request.
+Routing rules render a response.
+
+Routing with angular:
+depends on another module: angular-route.js . We can use component which is ng-route.  configure rules into $routeProvider. in this you need to describe all the urls and tell the routing engine how to deal with that particular urls. 
+This module is called ng-route.	$routeProvider has an APi which tells you how the url look like and what to do with that url.
+
+for each url , you can specify a template url i.e the html which angular has to find and load up for that url and the corresponding controller.
+
+so our default html file will now become what is commonly called as layout view or a show view.
+
+now there will be a space in the body of the default page where routing engine can load a certain template. we will tell the routing engine where to load these templates using the ng-view.
